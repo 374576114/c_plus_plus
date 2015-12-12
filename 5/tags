@@ -1,0 +1,35 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+QUEUE	5_queue.cpp	/^QUEUE::QUEUE(const QUEUE& s): s1(s.s1), s2(s.s2){$/;"	f	class:QUEUE
+QUEUE	5_queue.cpp	/^QUEUE::QUEUE(int m): s1(m), s2(m){$/;"	f	class:QUEUE
+QUEUE	5_queue.h	/^class QUEUE{$/;"	c
+STACK	3_stack.cpp	/^STACK::STACK(const STACK&s):max(s.max), elems(new int[s.max + 1]){$/;"	f	class:STACK
+STACK	3_stack.cpp	/^STACK::STACK(int m):max(m), elems(new int[m+1]){$/;"	f	class:STACK
+STACK	3_stack.h	/^class STACK{$/;"	c
+_3_STACK_H_	3_stack.h	2;"	d
+_5_QUEUE_H_	5_queue.h	2;"	d
+elems	3_stack.h	/^		int *const elems;$/;"	m	class:STACK
+main	main.cpp	/^int main(){$/;"	f
+max	3_stack.h	/^		const int max;$/;"	m	class:STACK
+obj	Makefile	/^obj := 3_stack.o main.o 5_queue.o$/;"	m
+operator <<	3_stack.cpp	/^STACK& STACK::operator<<(int e){$/;"	f	class:STACK
+operator <<	5_queue.cpp	/^QUEUE& QUEUE::operator<<(int e){$/;"	f	class:QUEUE
+operator =	3_stack.cpp	/^STACK& STACK::operator=(const STACK& s){$/;"	f	class:STACK
+operator =	5_queue.cpp	/^QUEUE& QUEUE::operator=(const QUEUE& s){$/;"	f	class:QUEUE
+operator >>	3_stack.cpp	/^STACK& STACK::operator>>(int &e){$/;"	f	class:STACK
+operator >>	5_queue.cpp	/^QUEUE& QUEUE::operator>>(int &e){$/;"	f	class:QUEUE
+operator []	3_stack.cpp	/^int STACK:: operator[](int x) const{$/;"	f	class:STACK
+operator int	3_stack.cpp	/^STACK::operator int() const{$/;"	f	class:STACK
+operator int	5_queue.cpp	/^QUEUE::operator int() const{$/;"	f	class:QUEUE
+pos	3_stack.h	/^		int pos;$/;"	m	class:STACK
+print	3_stack.cpp	/^void STACK::print() const{$/;"	f	class:STACK
+print	5_queue.cpp	/^void QUEUE::print() const{$/;"	f	class:QUEUE
+s1	5_queue.h	/^	STACK s1, s2;$/;"	m	class:QUEUE
+s2	5_queue.h	/^	STACK s1, s2;$/;"	m	class:QUEUE
+size	3_stack.cpp	/^int STACK::size() const{$/;"	f	class:STACK
+~QUEUE	5_queue.cpp	/^QUEUE::~QUEUE(){$/;"	f	class:QUEUE
+~STACK	3_stack.cpp	/^STACK::~STACK(){$/;"	f	class:STACK
