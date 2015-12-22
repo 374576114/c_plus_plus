@@ -8,3 +8,7 @@ main : ${obj}
 	g++ -o $@ -c $<
 main.o : main.cpp
 	g++ -o $@ -c $<
+
+.PHONY : clean
+clean:
+	rm ${obj} main

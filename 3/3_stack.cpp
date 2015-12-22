@@ -45,6 +45,7 @@ STACK& STACK::operator<<(int e){
 STACK& STACK::operator>>(int &e){
 	if(pos == 0){
 		std::cout<<"stack is empty"<<std::endl;
+		e = -1;
 		return *this;
 	}else{
 		pos -= 1;
@@ -79,6 +80,7 @@ void STACK::print() const{
 }
 
 STACK::~STACK(){
+	std::cout<<"destructor"<<std::endl;
 	*(int *)&max = 0;
 	pos = 0;
 	delete [] elems;

@@ -3,7 +3,6 @@
 STACK::STACK(int m):max(m), elems(new int[m+1]){
 	pos = 0;
 }
-//elems(s.elems)
 STACK::STACK(const STACK &s):max(s.max), elems(new int[s.max+1]){
     int i;
     pos = s.pos;
@@ -46,8 +45,6 @@ STACK& STACK::push(int e){
 		return *this;
 	}
 }
-//*(int **)&elems =
-//*(int *)&max=
 STACK& STACK::pop(int &e){
 	if(pos == 0){
 		std::cout<<"stack is empty"<<std::endl;
@@ -83,6 +80,7 @@ void STACK::print() const{
 }
 
 STACK::~STACK(){
+	std::cout<<"destructor"<<std::endl;
 	*(int *)&max = 0;
 	pos = 0;
 	delete [] elems;

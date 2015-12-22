@@ -19,10 +19,8 @@ class STACK{
 		STACK& pop(int &e);
 		STACK& assign(const STACK& s);
 		void print() const;
-		~STACK();
 
-	private :
-		STACK& operator= (STACK& s);
+		~STACK();
 };
 
 #endif 
